@@ -1,4 +1,4 @@
-package com.bestappsintown.vizserver
+package com.majaku.vizserver
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

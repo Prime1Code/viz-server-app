@@ -1,4 +1,4 @@
-package com.bestappsintown.vizserver
+package com.majaku.vizserver
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

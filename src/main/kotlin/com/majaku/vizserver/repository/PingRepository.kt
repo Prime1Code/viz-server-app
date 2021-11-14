@@ -1,6 +1,6 @@
-package com.bestappsintown.vizserver.repository
+package com.majaku.vizserver.repository
 
-import com.bestappsintown.visualizer.common.dto.Ping
+import com.majaku.viz.common.dto.Ping
 import org.springframework.stereotype.Repository
 import java.util.*
 

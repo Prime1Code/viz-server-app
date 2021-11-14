@@ -11,8 +11,8 @@ plugins {
 	kotlin("plugin.spring") version "1.5.21"
 }
 
-group = "com.bestappsintown"
-version = "0.0.1-SNAPSHOT"
+group = "com.majaku"
+version = "1.0.0"
 java.sourceCompatibility = VERSION_11
 
 configurations {
@@ -47,7 +47,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("com.squareup.okhttp3:okhttp:4.9.2")
-	implementation("com.bestappsintown:vis-common:0.0.1-SNAPSHOT")
+	implementation("com.majaku:viz-common:1.0.0")
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")

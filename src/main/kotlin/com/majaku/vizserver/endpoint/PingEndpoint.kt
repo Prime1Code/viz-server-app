@@ -1,7 +1,7 @@
-package com.bestappsintown.vizserver.endpoint
+package com.majaku.vizserver.endpoint
 
-import com.bestappsintown.visualizer.common.dto.Ping
-import com.bestappsintown.vizserver.repository.PingRepository
+import com.majaku.viz.common.dto.Ping
+import com.majaku.vizserver.repository.PingRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType.APPLICATION_JSON_VALUE
 import org.springframework.http.ResponseEntity
