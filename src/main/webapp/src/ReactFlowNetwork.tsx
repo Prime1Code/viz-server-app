@@ -5,8 +5,9 @@ import { v4 as uuidv4 } from 'uuid';
 import NetworkLink from './NetworkLink';
 import Ping from './Ping';
 import ServiceNode from './ServiceNode';
+import WEBSOCKET_CONFIG from './appconfig.json';
 
-const SOCKET_URL = 'http://localhost:8100/ws-message';
+const SOCKET_URL = WEBSOCKET_CONFIG.WEBSOCKET_SERVER_URL + ":" + WEBSOCKET_CONFIG.WEBSOCKET_SERVER_PORT + "/" + WEBSOCKET_CONFIG.WEBSOCKET_SERVER_PATH;
 
 interface States {
     elements: any[],
@@ -198,7 +199,7 @@ export default class ReactFlowNetwork extends Component<any, States> {
             edgeTypes={{special: NetworkLink}}>
                 <SockJsClient
                     url={SOCKET_URL}
-                    topics={['/topic/ping']}
+                    topics={['/topic/'+WEBSOCKET_CONFIG.WEBSOCKET_SERVER_TOPIC]}
                     onConnect={this.onConnected}
                     onDisconnect={this.onDisconnect}
                     onMessage={(msg: any) => this.onMessageReceived(msg)}

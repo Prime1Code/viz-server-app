@@ -1,0 +1,6 @@
+{
+  "WEBSOCKET_SERVER_URL": "http://localhost",
+  "WEBSOCKET_SERVER_PORT": "8100",
+  "WEBSOCKET_SERVER_PATH": "ws-message",
+  "WEBSOCKET_SERVER_TOPIC": "ping"
+}
